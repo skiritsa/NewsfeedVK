@@ -18,6 +18,8 @@
 		0485E86F242146ED0037F4E2 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0485E86E242146ED0037F4E2 /* AuthViewController.storyboard */; };
 		0485E871242149FD0037F4E2 /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0485E864242114880037F4E2 /* VKSdkFramework.framework */; };
 		0485E872242149FD0037F4E2 /* VKSdkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0485E864242114880037F4E2 /* VKSdkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		049B11C22423D2A300A54AFE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B11C12423D2A300A54AFE /* NetworkService.swift */; };
+		049B11C42423D36400A54AFE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B11C32423D36400A54AFE /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +49,8 @@
 		0485E869242144C90037F4E2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		0485E86C242146DE0037F4E2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		0485E86E242146ED0037F4E2 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		049B11C12423D2A300A54AFE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		049B11C32423D36400A54AFE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				0485E84F242110510037F4E2 /* AppDelegate.swift */,
 				0485E86B242144D20037F4E2 /* Services */,
 				0485E870242147040037F4E2 /* Auth */,
+				049B11C02423D26100A54AFE /* FeedViewContoroller */,
 				040E12502423CDA7003AE05D /* Helpers */,
 				0485E858242110540037F4E2 /* Assets.xcassets */,
 				0485E85A242110540037F4E2 /* LaunchScreen.storyboard */,
@@ -112,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				0485E869242144C90037F4E2 /* AuthService.swift */,
-				040E124A2423CB7C003AE05D /* FeedViewController.swift */,
-				040E124C2423CB9C003AE05D /* FeedViewController.storyboard */,
+				049B11C12423D2A300A54AFE /* NetworkService.swift */,
+				049B11C32423D36400A54AFE /* API.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -125,6 +130,15 @@
 				0485E86E242146ED0037F4E2 /* AuthViewController.storyboard */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		049B11C02423D26100A54AFE /* FeedViewContoroller */ = {
+			isa = PBXGroup;
+			children = (
+				040E124A2423CB7C003AE05D /* FeedViewController.swift */,
+				040E124C2423CB9C003AE05D /* FeedViewController.storyboard */,
+			);
+			path = FeedViewContoroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +240,9 @@
 				040E124F2423CD9F003AE05D /* UIViewController + Storyboard.swift in Sources */,
 				0485E850242110510037F4E2 /* AppDelegate.swift in Sources */,
 				040E124B2423CB7C003AE05D /* FeedViewController.swift in Sources */,
+				049B11C22423D2A300A54AFE /* NetworkService.swift in Sources */,
 				0485E86A242144C90037F4E2 /* AuthService.swift in Sources */,
+				049B11C42423D36400A54AFE /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthServiceDelegate {
         let navVC = UINavigationController(rootViewController: feedVC)
         window?.rootViewController = navVC
     }
-    
+     
     func authServiceDidSignInFail() {
         print(#function)
     }
