@@ -19,29 +19,32 @@ protocol NewsfeedBusinessLogic
 
 protocol NewsfeedDataStore
 {
-  //var name: String { get set }
+    //var name: String { get set }
 }
 
 class NewsfeedInteractor: NewsfeedBusinessLogic, NewsfeedDataStore
 {
-  var presenter: NewsfeedPresentationLogic?
-  var worker: NewsfeedWorker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
+    var presenter: NewsfeedPresentationLogic?
+    var worker: NewsfeedWorker?
+    private var fetcher: DataFetcher = NetworkDataFetcher(networking: NetworkService())
+    
+    // MARK: Do something
+    
     func makeRequest(request: Newsfeed.Model.Request.RequestType)
-  {
-    worker = NewsfeedWorker()
-    worker?.doSomeWork()
-    
-//    let response = Newsfeed.Model.Response.ResonseType()
-//    presenter?.presentSomething(response: response)
-    
-    switch request {
-    case .getFeed:
-        print(".getFeed Interactor")
-        presenter?.presentSomething(response: .presentNewsfeed)
+    {
+        worker = NewsfeedWorker()
+        worker?.doSomeWork()
+        
+        //    let response = Newsfeed.Model.Response.ResonseType()
+        //    presenter?.presentSomething(response: response)
+        
+        switch request {
+        case .getNewsFeed:
+            print(".getFeed Interactor")
+            fetcher.getFeed { [weak self] (feedResponse) in
+                guard let response = feedResponse else { return }
+                self?.presenter?.presentData(response: .presentNewsfeed(feed: response))
+            }
+        }
     }
-  }
 }

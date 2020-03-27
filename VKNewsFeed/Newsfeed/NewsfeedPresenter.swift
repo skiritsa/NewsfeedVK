@@ -14,7 +14,7 @@ import UIKit
 
 protocol NewsfeedPresentationLogic
 {
-    func presentSomething(response: Newsfeed.Model.Response.ResonseType)
+    func presentData(response: Newsfeed.Model.Response.ResonseType)
 }
 
 class NewsfeedPresenter: NewsfeedPresentationLogic
@@ -23,12 +23,27 @@ class NewsfeedPresenter: NewsfeedPresentationLogic
   
   // MARK: Do something
   
-    func presentSomething(response: Newsfeed.Model.Response.ResonseType)
+    func presentData(response: Newsfeed.Model.Response.ResonseType)
   {
     switch response {
-    case .presentNewsfeed:
-        print(".prenestNewsfeed Presenter")
-        viewController?.displayData(viewModel: .displayNewfeed)
+    case .presentNewsfeed(let feed):
+        
+        let cells = feed.items.map { (feedItem) in
+            cellViewModel(from: feedItem)
+        }
+        let feedViewModel = FeedViewModel.init(cells: cells)
+        viewController?.displayData(viewModel: .displayNewfeed(feedViewMode: feedViewModel))
     }
   }
+    
+    private func cellViewModel(from feedItem: FeedItem) -> FeedViewModel.Cell {
+        return FeedViewModel.Cell.init(iconUrlString: "",
+                                       name: "future name",
+                                       date: "future date",
+                                       text: feedItem.text,
+                                       likes: String(feedItem.views?.count ?? 0),
+                                       comments: String(feedItem.views?.count ?? 0),
+                                       shares: String(feedItem.views?.count ?? 0),
+                                       views: String(feedItem.views?.count ?? 0))
+    }
 }
