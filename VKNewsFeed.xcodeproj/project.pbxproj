@@ -12,6 +12,7 @@
 		042B8D5C2423E0E300A3EEA3 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B8D5B2423E0E300A3EEA3 /* NetworkDataFetcher.swift */; };
 		047BAB9F242E61D000F9508C /* NewsfeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BAB9E242E61D000F9508C /* NewsfeedCell.swift */; };
 		047BABA1242E620C00F9508C /* NewsfeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047BABA0242E620C00F9508C /* NewsfeedCell.xib */; };
+		047BABA32430F46100F9508C /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BABA22430F46100F9508C /* WebImageView.swift */; };
 		0485E850242110510037F4E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485E84F242110510037F4E2 /* AppDelegate.swift */; };
 		0485E859242110540037F4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0485E858242110540037F4E2 /* Assets.xcassets */; };
 		0485E85C242110540037F4E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0485E85A242110540037F4E2 /* LaunchScreen.storyboard */; };
@@ -51,6 +52,7 @@
 		042B8D5B2423E0E300A3EEA3 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		047BAB9E242E61D000F9508C /* NewsfeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCell.swift; sourceTree = "<group>"; };
 		047BABA0242E620C00F9508C /* NewsfeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsfeedCell.xib; sourceTree = "<group>"; };
+		047BABA22430F46100F9508C /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		0485E84C242110510037F4E2 /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0485E84F242110510037F4E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0485E858242110540037F4E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				040E124E2423CD9F003AE05D /* UIViewController + Storyboard.swift */,
+				047BABA22430F46100F9508C /* WebImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				04BB98B7242D29D600835881 /* NewsfeedRouter.swift in Sources */,
 				049B11C22423D2A300A54AFE /* NetworkService.swift in Sources */,
 				04BB98B8242D29D600835881 /* NewsfeedModels.swift in Sources */,
+				047BABA32430F46100F9508C /* WebImageView.swift in Sources */,
 				042B8D5C2423E0E300A3EEA3 /* NetworkDataFetcher.swift in Sources */,
 				04BB98B6242D29D600835881 /* NewsfeedWorker.swift in Sources */,
 				0485E86A242144C90037F4E2 /* AuthService.swift in Sources */,
