@@ -10,6 +10,8 @@
 		040E124F2423CD9F003AE05D /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E124E2423CD9F003AE05D /* UIViewController + Storyboard.swift */; };
 		042B8D5A2423DE8200A3EEA3 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B8D592423DE8200A3EEA3 /* FeedResponse.swift */; };
 		042B8D5C2423E0E300A3EEA3 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B8D5B2423E0E300A3EEA3 /* NetworkDataFetcher.swift */; };
+		0450A3632434F810009783BA /* NewsfeedCellLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A3622434F810009783BA /* NewsfeedCellLayoutCalculator.swift */; };
+		0450A36524350C3B009783BA /* String + Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450A36424350C3B009783BA /* String + Height.swift */; };
 		047BAB9F242E61D000F9508C /* NewsfeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BAB9E242E61D000F9508C /* NewsfeedCell.swift */; };
 		047BABA1242E620C00F9508C /* NewsfeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047BABA0242E620C00F9508C /* NewsfeedCell.xib */; };
 		047BABA32430F46100F9508C /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BABA22430F46100F9508C /* WebImageView.swift */; };
@@ -50,6 +52,8 @@
 		040E124E2423CD9F003AE05D /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		042B8D592423DE8200A3EEA3 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 		042B8D5B2423E0E300A3EEA3 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		0450A3622434F810009783BA /* NewsfeedCellLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCellLayoutCalculator.swift; sourceTree = "<group>"; };
+		0450A36424350C3B009783BA /* String + Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Height.swift"; sourceTree = "<group>"; };
 		047BAB9E242E61D000F9508C /* NewsfeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCell.swift; sourceTree = "<group>"; };
 		047BABA0242E620C00F9508C /* NewsfeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsfeedCell.xib; sourceTree = "<group>"; };
 		047BABA22430F46100F9508C /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			children = (
 				040E124E2423CD9F003AE05D /* UIViewController + Storyboard.swift */,
 				047BABA22430F46100F9508C /* WebImageView.swift */,
+				0450A36424350C3B009783BA /* String + Height.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			children = (
 				047BAB9E242E61D000F9508C /* NewsfeedCell.swift */,
 				047BABA0242E620C00F9508C /* NewsfeedCell.xib */,
+				0450A3622434F810009783BA /* NewsfeedCellLayoutCalculator.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042B8D5A2423DE8200A3EEA3 /* FeedResponse.swift in Sources */,
+				0450A36524350C3B009783BA /* String + Height.swift in Sources */,
 				04BB98B9242D29D600835881 /* NewsfeedViewController.swift in Sources */,
 				0485E86D242146DE0037F4E2 /* AuthViewController.swift in Sources */,
 				040E124F2423CD9F003AE05D /* UIViewController + Storyboard.swift in Sources */,
@@ -292,6 +299,7 @@
 				04BB98B7242D29D600835881 /* NewsfeedRouter.swift in Sources */,
 				049B11C22423D2A300A54AFE /* NetworkService.swift in Sources */,
 				04BB98B8242D29D600835881 /* NewsfeedModels.swift in Sources */,
+				0450A3632434F810009783BA /* NewsfeedCellLayoutCalculator.swift in Sources */,
 				047BABA32430F46100F9508C /* WebImageView.swift in Sources */,
 				042B8D5C2423E0E300A3EEA3 /* NetworkDataFetcher.swift in Sources */,
 				04BB98B6242D29D600835881 /* NewsfeedWorker.swift in Sources */,
