@@ -26,6 +26,10 @@ class NewsfeedInteractor: NewsfeedBusinessLogic, NewsfeedDataStore
 {
     var presenter: NewsfeedPresentationLogic?
     var worker: NewsfeedWorker?
+    
+    private var revealPostIds = [Int]()
+    private var feedResponse: FeedResponse?
+    
     private var fetcher: DataFetcher = NetworkDataFetcher(networking: NetworkService())
     
     // MARK: Do something
@@ -42,9 +46,17 @@ class NewsfeedInteractor: NewsfeedBusinessLogic, NewsfeedDataStore
         case .getNewsFeed:
             print(".getFeed Interactor")
             fetcher.getFeed { [weak self] (feedResponse) in
-                guard let response = feedResponse else { return }
-                self?.presenter?.presentData(response: .presentNewsfeed(feed: response))
+                self?.feedResponse = feedResponse
+                self?.presentFeed()
             }
+        case .revealPostIds(postId: let postId):
+            revealPostIds.append(postId)
+            presentFeed()
         }
+    }
+    
+    private func presentFeed() {
+        guard let response = feedResponse else { return }
+        presenter?.presentData(response: .presentNewsfeed(feed: response, revealedPostIds: revealPostIds))
     }
 }
