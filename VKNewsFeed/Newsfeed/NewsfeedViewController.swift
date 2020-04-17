@@ -17,7 +17,7 @@ protocol NewsfeedDisplayLogic: class
     func displayData(viewModel: Newsfeed.Model.ViewModel.ViewModelData)
 }
 
-class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic
+class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewsfeedCodeCellDelegate
 {
     var interactor: NewsfeedBusinessLogic?
     var router: (NSObjectProtocol & NewsfeedRoutingLogic & NewsfeedDataPassing)?
@@ -77,6 +77,12 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic
             table.reloadData()
         }
     }
+    
+    // MARK: - NewsfeedCodeCellDelegate
+    
+    func revealPost(for cell: NewsfeedCodeCell) {
+        print("324")
+    }
 }
 
 extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
@@ -92,7 +98,7 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = "index \(indexPath.row)"
         let cellViewModel = feedViewModel.cells[indexPath.row]
         cell.set(viewModel: cellViewModel)
-        
+        cell.delegate = self
         return cell
     }
     
