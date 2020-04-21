@@ -35,6 +35,8 @@
 		04BB98B9242D29D600835881 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB98B3242D29D600835881 /* NewsfeedViewController.swift */; };
 		04BB98BA242D29D600835881 /* NewsfeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB98B4242D29D600835881 /* NewsfeedInteractor.swift */; };
 		04BB98BC242D30A400835881 /* NewsfeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BB98BB242D30A400835881 /* NewsfeedViewController.storyboard */; };
+		04C4DE93244EEFC300C5A3D1 /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4DE92244EEFC300C5A3D1 /* GalleryCollectionView.swift */; };
+		04C4DE95244EF1DC00C5A3D1 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4DE94244EF1DC00C5A3D1 /* GalleryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,6 +83,8 @@
 		04BB98B3242D29D600835881 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
 		04BB98B4242D29D600835881 /* NewsfeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedInteractor.swift; sourceTree = "<group>"; };
 		04BB98BB242D30A400835881 /* NewsfeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsfeedViewController.storyboard; sourceTree = "<group>"; };
+		04C4DE92244EEFC300C5A3D1 /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
+		04C4DE94244EF1DC00C5A3D1 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 		04BB98AE242D29C100835881 /* Newsfeed */ = {
 			isa = PBXGroup;
 			children = (
+				04C4DE91244EEFAC00C5A3D1 /* GalleryView */,
 				047BAB9D242E61C000F9508C /* Cell */,
 				04BB98BB242D30A400835881 /* NewsfeedViewController.storyboard */,
 				04BB98B3242D29D600835881 /* NewsfeedViewController.swift */,
@@ -200,6 +205,15 @@
 				04BB98B1242D29D600835881 /* NewsfeedRouter.swift */,
 			);
 			path = Newsfeed;
+			sourceTree = "<group>";
+		};
+		04C4DE91244EEFAC00C5A3D1 /* GalleryView */ = {
+			isa = PBXGroup;
+			children = (
+				04C4DE92244EEFC300C5A3D1 /* GalleryCollectionView.swift */,
+				04C4DE94244EF1DC00C5A3D1 /* GalleryCollectionViewCell.swift */,
+			);
+			path = GalleryView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +316,7 @@
 				0450A36524350C3B009783BA /* String + Height.swift in Sources */,
 				04BB98B9242D29D600835881 /* NewsfeedViewController.swift in Sources */,
 				0485E86D242146DE0037F4E2 /* AuthViewController.swift in Sources */,
+				04C4DE95244EF1DC00C5A3D1 /* GalleryCollectionViewCell.swift in Sources */,
 				040E124F2423CD9F003AE05D /* UIViewController + Storyboard.swift in Sources */,
 				04BB98B5242D29D600835881 /* NewsfeedPresenter.swift in Sources */,
 				0485E850242110510037F4E2 /* AppDelegate.swift in Sources */,
@@ -317,6 +332,7 @@
 				04BB98B6242D29D600835881 /* NewsfeedWorker.swift in Sources */,
 				0485E86A242144C90037F4E2 /* AuthService.swift in Sources */,
 				049B11C42423D36400A54AFE /* API.swift in Sources */,
+				04C4DE93244EEFC300C5A3D1 /* GalleryCollectionView.swift in Sources */,
 				047BAB9F242E61D000F9508C /* NewsfeedCell.swift in Sources */,
 				04BB98BA242D29D600835881 /* NewsfeedInteractor.swift in Sources */,
 			);
