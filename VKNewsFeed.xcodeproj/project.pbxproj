@@ -37,6 +37,9 @@
 		04BB98BC242D30A400835881 /* NewsfeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BB98BB242D30A400835881 /* NewsfeedViewController.storyboard */; };
 		04C4DE93244EEFC300C5A3D1 /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4DE92244EEFC300C5A3D1 /* GalleryCollectionView.swift */; };
 		04C4DE95244EF1DC00C5A3D1 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4DE94244EF1DC00C5A3D1 /* GalleryCollectionViewCell.swift */; };
+		04DE23E72459F6B800BE4B70 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE23E62459F6B800BE4B70 /* TitleView.swift */; };
+		04DE23E92459F74100BE4B70 /* InsetableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE23E82459F74100BE4B70 /* InsetableTextField.swift */; };
+		04DE23EB2459FCE400BE4B70 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE23EA2459FCE400BE4B70 /* UserResponse.swift */; };
 		04E53E9124559B3700243200 /* Rowlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E53E9024559B3700243200 /* Rowlayout.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +89,9 @@
 		04BB98BB242D30A400835881 /* NewsfeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsfeedViewController.storyboard; sourceTree = "<group>"; };
 		04C4DE92244EEFC300C5A3D1 /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
 		04C4DE94244EF1DC00C5A3D1 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		04DE23E62459F6B800BE4B70 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		04DE23E82459F74100BE4B70 /* InsetableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetableTextField.swift; sourceTree = "<group>"; };
+		04DE23EA2459FCE400BE4B70 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		04E53E9024559B3700243200 /* Rowlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rowlayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				042B8D592423DE8200A3EEA3 /* FeedResponse.swift */,
+				04DE23EA2459FCE400BE4B70 /* UserResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 		04BB98AE242D29C100835881 /* Newsfeed */ = {
 			isa = PBXGroup;
 			children = (
+				04DE23E52459F6A500BE4B70 /* TitleView */,
 				04C4DE91244EEFAC00C5A3D1 /* GalleryView */,
 				047BAB9D242E61C000F9508C /* Cell */,
 				04BB98BB242D30A400835881 /* NewsfeedViewController.storyboard */,
@@ -217,6 +225,15 @@
 				04E53E9024559B3700243200 /* Rowlayout.swift */,
 			);
 			path = GalleryView;
+			sourceTree = "<group>";
+		};
+		04DE23E52459F6A500BE4B70 /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				04DE23E62459F6B800BE4B70 /* TitleView.swift */,
+				04DE23E82459F74100BE4B70 /* InsetableTextField.swift */,
+			);
+			path = TitleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,8 +346,10 @@
 				0450A3632434F810009783BA /* NewsfeedCellLayoutCalculator.swift in Sources */,
 				0466D539243635B8000791F9 /* Constants.swift in Sources */,
 				04E53E9124559B3700243200 /* Rowlayout.swift in Sources */,
+				04DE23E72459F6B800BE4B70 /* TitleView.swift in Sources */,
 				0466D5352435DA69000791F9 /* NewsfeedCodeCell.swift in Sources */,
 				0466D5372435E50D000791F9 /* Constraints.swift in Sources */,
+				04DE23EB2459FCE400BE4B70 /* UserResponse.swift in Sources */,
 				047BABA32430F46100F9508C /* WebImageView.swift in Sources */,
 				042B8D5C2423E0E300A3EEA3 /* NetworkDataFetcher.swift in Sources */,
 				04BB98B6242D29D600835881 /* NewsfeedWorker.swift in Sources */,
@@ -339,6 +358,7 @@
 				04C4DE93244EEFC300C5A3D1 /* GalleryCollectionView.swift in Sources */,
 				047BAB9F242E61D000F9508C /* NewsfeedCell.swift in Sources */,
 				04BB98BA242D29D600835881 /* NewsfeedInteractor.swift in Sources */,
+				04DE23E92459F74100BE4B70 /* InsetableTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

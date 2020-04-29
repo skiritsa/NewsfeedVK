@@ -46,7 +46,6 @@ class RowLayout: UICollectionViewLayout {
         
         for item in 0 ..< collectionView.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)
-            print(indexPath.item)
             guard let delegate = delegate else { return }
             let photoSize = delegate.collectionView(collectionView, photoAtIndexPath: indexPath)
             photos.append(photoSize)

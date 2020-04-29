@@ -57,7 +57,6 @@ extension GalleryCollectionView: RowLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, photoAtIndexPath indexPath: IndexPath) -> CGSize {
         let width = photos[indexPath.row].width
         let height = photos[indexPath.row].height
-        print(#function)
         return CGSize(width: width, height: height)
     }
 }
