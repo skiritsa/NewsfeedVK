@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		040D1DD1245C5012009729CF /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D1DD0245C5012009729CF /* FooterView.swift */; };
 		040D1DD3245C5383009729CF /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 040D1DD2245C5383009729CF /* Localizable.stringsdict */; };
+		040D1DD6245C5871009729CF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D1DD5245C5871009729CF /* GradientView.swift */; };
 		040E124F2423CD9F003AE05D /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040E124E2423CD9F003AE05D /* UIViewController + Storyboard.swift */; };
 		042B8D5A2423DE8200A3EEA3 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B8D592423DE8200A3EEA3 /* FeedResponse.swift */; };
 		042B8D5C2423E0E300A3EEA3 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B8D5B2423E0E300A3EEA3 /* NetworkDataFetcher.swift */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		040D1DD0245C5012009729CF /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		040D1DD2245C5383009729CF /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		040D1DD5245C5871009729CF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		040E124E2423CD9F003AE05D /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		042B8D592423DE8200A3EEA3 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 		042B8D5B2423E0E300A3EEA3 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
@@ -119,13 +121,22 @@
 			path = FooterView;
 			sourceTree = "<group>";
 		};
+		040D1DD4245C585A009729CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				047BABA22430F46100F9508C /* WebImageView.swift */,
+				040D1DD5245C5871009729CF /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		040E12502423CDA7003AE05D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				040E124E2423CD9F003AE05D /* UIViewController + Storyboard.swift */,
-				047BABA22430F46100F9508C /* WebImageView.swift */,
 				0450A36424350C3B009783BA /* String + Height.swift */,
 				0466D5362435E50D000791F9 /* Constraints.swift */,
+				040D1DD4245C585A009729CF /* Views */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -373,6 +384,7 @@
 				049B11C42423D36400A54AFE /* API.swift in Sources */,
 				04C4DE93244EEFC300C5A3D1 /* GalleryCollectionView.swift in Sources */,
 				047BAB9F242E61D000F9508C /* NewsfeedCell.swift in Sources */,
+				040D1DD6245C5871009729CF /* GradientView.swift in Sources */,
 				04BB98BA242D29D600835881 /* NewsfeedInteractor.swift in Sources */,
 				04DE23E92459F74100BE4B70 /* InsetableTextField.swift in Sources */,
 			);
